@@ -12,7 +12,7 @@ sparkR.session()
   res = spark.lapply(list.of.M, function(x) x %*% x)
 
 
-  save(res, file="/home/svendo/workshop/data/spark.lapply_res1.RData")
+  save(res, file="/path-to-file/spark.lapply_res1.RData")
 
 sparkR.stop()
 detach("package:SparkR", unload=TRUE)
