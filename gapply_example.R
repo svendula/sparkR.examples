@@ -11,7 +11,7 @@ sparkR.session()
   
   rdf_mean = collect(sdf_mean)
 
-save(rdf_mean, file="/home/svendo/workshop/data/gapply_res.RData")
+save(rdf_mean, file="/path-to-file/gapply_res.RData")
 
 sparkR.stop()
 detach("package:SparkR", unload=TRUE)
