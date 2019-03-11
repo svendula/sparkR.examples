@@ -8,7 +8,7 @@ sparkR.session()
   spark_glm = spark.lapply(families, function(x) glm(Sepal.Length ~ Sepal.Width + Species, iris, family = x))
 
 
-save(spark_glm, file="/home/svendo/workshop/data/spark.lapply_res2.RData")
+save(spark_glm, file="/path-to-file/spark.lapply_res2.RData")
 
 sparkR.stop()
 detach("package:SparkR", unload=TRUE)
